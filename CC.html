@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="CC.css">
+    <!-- Link for Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Div For Changing Buttons -->
+    <div class="changing_buttons">
+        <button class="change_button" id="country_button">Get Coversion via Choosing Country Name</button>
+        <button class="change_button" id="currency_code_button">Get Coversion via Choosing Currency Code</button>
+    </div>
+    <!-- Main Div Code -->
+    <div class="main_div">
+        <p id="heading">Currency Converter</p>
+        <label id="enter_amount">Enter Amount:</label>
+        <input id="input_amount" type="number" placeholder="Enter the Amount">
+        <div class="from_to_div">
+            <!-- From Div -->
+            <div class="from_div">
+                <p>From</p>
+                <p class="currency_name_div">United States Dollar</p>
+                <img src="https://flagsapi.com/US/flat/64.png" alt="US Flag">
+                <select class="select" id="from_select" size="1"></select>
+            </div>
+            <div class="exchange_icon">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <!-- To Div -->
+            <div class="to_div">
+                <p>To</p>
+                <p class="currency_name_div">Indian Rupee</p>
+                <img src="https://flagsapi.com/IN/flat/64.png" alt="India Flag">
+                <select class="select" id="to_select" size="1"></select>
+            </div>
+        </div>
+        <!-- Conversion Formula -->
+        <div class="conversion_formula">
+            1 USD = 80 INR
+        </div>
+        <!-- Actual Conversion -->
+        <div class="actual_conversion">
+            1 USD = 80 INR
+        </div>
+        <!-- Submit Button -->
+        <button id="submitButton" type="submit">Get Exchanged Rate</button>
+    </div>
+    <div class="currency_conversion_image"></div>
+    <div class="black_div"></div>
+    <script src="CCode.js"></script>
+    <script src="CC.js"></script>
+</body>
+</html>

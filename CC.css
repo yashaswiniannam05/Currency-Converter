@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0,
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.changing_buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main_div{
+    width:25%;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+#heading{
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+#enter_amount{
+    text-align: left;
+    width: 100%;
+    margin-left: 11px;
+    padding: 0;
+}
+
+#input_amount{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: large;
+    padding:0;
+}
+
+.from_to_div{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    width:100%;
+
+}
+
+.from_div{
+    display:flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.to_div{
+    display:flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.currency_name_div{
+    font-size: 15px;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+select{
+    border-radius: 10px;
+    padding: 2px;
+    appearance: none;
+    height: auto;
+    text-align: center;
+    max-height: 30px;
+    top:100%;
+}
+
+select option{
+    padding:8px;
+    font-size: 14px;
+}
+
+select{
+    height: auto;
+}
+
+select::-webkit-scrollbar{
+    background-color: rgb(255, 205, 255);
+    width: 10px;
+}
+
+select::-webkit-scrollbar-thumb{
+    background-color: purple;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.conversion_formula{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.actual_conversion{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+button{
+    font-size: 20px;
+    height: 50px;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+}
+
+button:hover{
+    cursor:pointer;
+    opacity: 0.8;
+}
+
+.change_button{
+    background-color: rgb(176, 0, 176);
+}
+
+.exchange_icon i{
+    padding-top: 50px;
+}
+
+.currency_conversion_image{
+    height: 558px;
+    width: 300px;
+    background-image: url("https://img.freepik.com/premium-photo/currency-exchange-rates-displayed-monitor-screen-stock-market-vertical-mobile-wallpaper_896558-53078.jpg");
+    margin-right: 0;
+    justify-self: end;
+}
